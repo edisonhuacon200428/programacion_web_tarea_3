@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cálculo de Aumento de Sueldo</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>Cálculo de Aumento de Sueldo</h1>
+    <script>
+        let sueldo = parseFloat(prompt("Ingrese el sueldo del operario:"));
+        let antiguedad = parseInt(prompt("Ingrese los años de antigüedad del operario:"));
+        if (sueldo < 500 && antiguedad >= 10) {
+            let aumento = sueldo * 0.2;
+            let sueldoNuevo = sueldo + aumento;
+            document.write(`El sueldo a pagar es: $${sueldoNuevo.toFixed(2)}`);
+        } else if (sueldo < 500 && antiguedad < 10) {
+            let aumento = sueldo * 0.05;
+            let sueldoNuevo = sueldo + aumento;
+            document.write(`El sueldo a pagar es: $${sueldoNuevo.toFixed(2)}`);
+        } else {
+            document.write(`El sueldo a pagar es: $${sueldo.toFixed(2)}`);
+        }
+    </script>
+</body>
+</html>

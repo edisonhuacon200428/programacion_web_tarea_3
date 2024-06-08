@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Verificar Valores Iguales</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>Verificar Valores Iguales</h1>
+    <script>
+        let valor1 = parseFloat(prompt("Ingrese el primer valor:"));
+        let valor2 = parseFloat(prompt("Ingrese el segundo valor:"));
+        let valor3 = parseFloat(prompt("Ingrese el tercer valor:"));
+        if (valor1 === valor2 && valor2 === valor3) {
+            let suma = valor1 + valor2;
+            let resultado = suma * valor3;
+            document.write(`La suma del primero y segundo valor es ${suma}, y el resultado de multiplicarlo por el tercero es ${resultado}.`);
+        } else {
+            document.write("Los valores ingresados no son iguales.");
+        }
+    </script>
+</body>
+</html>

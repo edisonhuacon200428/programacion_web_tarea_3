@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Verificar Fecha de Navidad</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>Verificar Fecha de Navidad</h1>
+    <script>
+        let day = parseInt(prompt("Ingrese el día:"));
+        let month = parseInt(prompt("Ingrese el mes:"));
+        let year = parseInt(prompt("Ingrese el año:"));
+        if (day === 25 && month === 12) {
+            document.write(`La fecha ${day}/${month}/${year} corresponde a Navidad.`);
+        } else {
+            document.write(`La fecha ${day}/${month}/${year} no corresponde a Navidad.`);
+        }
+    </script>
+</body>
+</html>
