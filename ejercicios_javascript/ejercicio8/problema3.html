@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Estructuras condicionales anidadas</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <script>
+        let num;
+        num = parseInt(prompt('Ingrese un número de 1,2,3,4 o 5 dígitos'));
+        
+        if (num < 10) {
+            document.write('Tiene un dígito');
+        } else if (num < 100) {
+            document.write('Tiene dos dígitos');
+        } else if (num < 1000) {
+            document.write('Tiene tres dígitos');
+        } else if (num < 10000) {
+            document.write('Tiene cuatro dígitos');
+        } else if (num < 100000) {
+            document.write('Tiene cinco dígitos');
+        }
+    </script>
+
+</body>
+</html>
