@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Traductor de Palabras</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>Traductor de Palabras</h1>
+    <script>
+        let palabra = prompt("Ingrese una de las siguientes palabras: casa, mesa, perro, gato");
+        palabra = palabra.toLowerCase();
+        let traduccion;
+        switch (palabra) {
+            case "casa":
+                traduccion = "house";
+                break;
+            case "mesa":
+                traduccion = "table";
+                break;
+            case "perro":
+                traduccion = "dog";
+                break;
+            case "gato":
+                traduccion = "cat";
+                break;
+            default:
+                traduccion = "La palabra ingresada no es válida.";
+        }
+        document.write("La traducción al inglés es: " + traduccion);
+    </script>
+</body>
+</html>
